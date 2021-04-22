@@ -1,0 +1,24 @@
+初期化→	git init
+ファイル選択→	git add 【ファイル名】
+
+選択したファイルを記録するには、
+git commit -m "メッセージ"を実行する
+
+リモートの登録（アップロード先）→	 git remote add リモート名 URL 
+
+ブッシュ＝アップロード
+　ブッシュ→	git push origin master
+プル＝DL
+　プル　→	git pull origin master
+
+自分が変更後のファイル名表示→
+		git status
+
+変更内容を表示→git diff
+
+選択ファイルの確認→	git status
+
+コミット履歴→　git log
+終了→Q
+
+
