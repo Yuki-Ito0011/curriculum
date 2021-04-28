@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /**
  * Task1_1: 課題内容
  *
@@ -41,3 +42,8 @@ public class Task1_1 {
     
         }
     }
+=======
+public class Task1_1 {
+  
+}
+>>>>>>> Stashed changes
