@@ -34,7 +34,7 @@ public class Task1_4 {
       // 以下の変数「name」「pass」を使用して、1〜5の条件を満たす処理を記述してください。
       // nameとpassはログイン画面からの入力値だと想定してみましょう。
   String name = "alice";
-  String pass = "alice123";
+  String pass = "alice12";
 
   // 2 「name」の値が「USER_NAME」と等しく、「 pass 」の値が「USER_PASSWORD」と等しい場合。
       //      定数を使用して「 ログイン成功です 」と出力してください。
@@ -45,20 +45,27 @@ public class Task1_4 {
       // 3 「USER_NAME」の値のみ等しい場合。
      //     定数を使用して「 パスワードに誤りがあります。 」 と出力してください。
 
-      if( USER_NAME == name && USER_PASSWORD != pass){
-          System.out.println(CONST_MSG_ERROR_PASS);
-      }
+      else if( name.equals(USER_NAME) && !pass.equals(USER_PASSWORD)){
+      System.out.println(CONST_MSG_ERROR_PASS);
+  }
+      //下記と同様
+      // if( USER_NAME == name && USER_PASSWORD != pass){
+      //     System.out.println(CONST_MSG_ERROR_PASS);
+      // }
 
     // 4 「USER_PASSWORD」の値のみ等しい場合。
     // 定数を使用して「 名前に誤りがあります。 」と出力してください。
-
-    else if( USER_NAME != name && USER_PASSWORD == pass){
+    else if( !name.equals(USER_NAME) && pass.equals(USER_PASSWORD)){
+      //下記と同様
+      //else if( USER_NAME != name && USER_PASSWORD == pass){
       System.out.println(CONST_MSG_ERROR_NAME);
     }
     // 5 「USER_NAME」も「USER_PASSWORD」の値も間違っていた場合。 
     //定数を使用して「 入力情報に誤りがあります。 」と出力してください。
 
-    else if( USER_NAME != name && USER_PASSWORD != pass){
+    else if( !name.equals(USER_NAME) && !pass.equals(USER_PASSWORD)){
+    //下記と同様
+    //else if( USER_NAME != name && USER_PASSWORD != pass){
       System.out.println(CONST_MSG_ERROR_INPUT);
     }
   }
